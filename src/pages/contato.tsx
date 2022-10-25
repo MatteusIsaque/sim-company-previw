@@ -2,8 +2,8 @@ import { Box, Grid, Text, useBreakpointValue, useMediaQuery } from "@chakra-ui/r
 import Image from "next/image";
 
 import Atendente from './../img/index/sistema-atendentes-call-center.png'
-import Background from './../img/index/fundo01.jpg'
-import Mobile from './../img/index/fundo-mobile.jpg'
+import Background from './../img/pabx-vendas/fundo01.jpg'
+import Mobile from './../img/pabx-vendas/fundo-mobile.jpg'
 import FormElement from "../components/Form/Form";
 import H2 from "../components/Texts/H2";
 import { useEffect, useState } from "react";
