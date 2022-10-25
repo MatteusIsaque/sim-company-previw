@@ -12,9 +12,6 @@ export default function ItemSlide({ children, ...rest }: ItemSlideProps) {
     <Grid
       px={{ base: '2%', sm: '10%' }}
       height='80vh'
-      bgPosition='center'
-      bgSize='cover'
-      bgRepeat='no-repeat'
       {...rest}>
       <Box display='flex' justifyContent='center' alignItems='start' flexDirection='column' color='white'>
         {children}

@@ -152,12 +152,10 @@ export default function Index() {
             Implantação de Sistemas Operacionais, Storage, Backup, Banco de Dados e muito mais.</Text>
         </Box>
         <Box
-          backgroundImage='https://i.imgur.com/LQasMhC.png'
           h={{ base: '494px', xl: '550px', '2xl': '600px' }}
           w='100%'
-          bgPosition={{ base: 'center', sm: 'top' }}
-          bgSize='cover'
           mt={{ base: '-100px', xl: '-8vw', '2xl': '-152px' }}>
+          <Image src={rodape} />
         </Box>
       </Flex>
 
