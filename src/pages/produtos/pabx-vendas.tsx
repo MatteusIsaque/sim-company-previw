@@ -1,8 +1,8 @@
 import { Box, Divider, Fade, Flex, Grid, GridItem, Stack, Text, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
 import Image from 'next/image'
 import FormElement from "./../../components/Form/Form";
-import Background from './../../img/pabx-vendas/fundo01.jpg'
-import Mobile from './../../img/pabx-vendas/fundo-mobile.jpg'
+import Background from './../../img/global/fundo01.jpg'
+import Mobile from './../../img/global/fundo-mobile.jpg'
 
 import H2 from "../../components/Texts/H2";
 import ButtonChakra from "../../components/Button/Button";

@@ -1,11 +1,12 @@
 import { Flex, Text } from "@chakra-ui/react";
 import Image from 'next/image'
-import LogoPNG from './../../img/index/sim-company-logo.png'
+import LogoPNG from './../../img/global/sim-company-logo.png'
 
 type LogoType = {
   w?: string
   h?: string
 }
+
 
 
 export default function Logo({ w, h }: LogoType) {
