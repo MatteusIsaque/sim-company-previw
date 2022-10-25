@@ -1,18 +1,19 @@
 import { Box, Divider, Fade, Flex, Grid, GridItem, Stack, Text, useBreakpointValue, useDisclosure } from "@chakra-ui/react";
 import Image from 'next/image'
 import FormElement from "./../../components/Form/Form";
-import Background from './../img/index/fundo01.jpg'
-import Mobile from './../img/index/fundo-mobile.jpg'
+import Background from './../img/pabx-vendas/fundo01.jpg'
+import Mobile from './../img/pabx-vendas/fundo-mobile.jpg'
 
 import H2 from "../../components/Texts/H2";
 import ButtonChakra from "../../components/Button/Button";
 
-import Atendente from './../img/index/sistema-atendentes-call-center.png'
-import Phone from './../img/index/aparelho-ip.jpg'
-import Modelo from './../img/index/pabx-nuvem.jpg'
+import Atendente from './../../img/pabx-vendas/sistema-atendentes-call-center.png'
+import Phone from './../../img/pabx-vendas/aparelho-ip.jpg'
+import Modelo from './../../img/pabx-vendas/pabx-nuvem.jpg'
 import H3 from "./../../components/Texts/H3";
 
 import Information from "./../../components/Information/Topics";
+
 
 
 
