@@ -1,8 +1,8 @@
 import { Box, Flex, Grid, GridItem, Stack, Text, useBreakpointValue, useMediaQuery } from "@chakra-ui/react";
 import Image from "next/image";
 
-import Background from './../img/index/fundo01.jpg'
-import Mobile from './../img/index/fundo-mobile.jpg'
+import Background from './../img/global/fundo01.jpg'
+import Mobile from './../img/global/fundo-mobile.jpg'
 import { useEffect, useState } from "react";
 
 import Product from './../img/services/tell.png'

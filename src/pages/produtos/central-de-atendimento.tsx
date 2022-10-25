@@ -1,29 +1,21 @@
-import { Box, Flex, Grid, GridItem, Highlight, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from "@chakra-ui/react";
 import Head from "next/head";
-import Image from "next/image";
 import ButtonChakra from "../../components/Button/Button";
 import Topics from "../../components/Information/Topics";
 import DoubleGrid from "../../components/ProdutosPage/DoubleGrid";
 import PresentationProduction from "../../components/ProdutosPage/PresentationProduction";
 import Track from "../../components/ProdutosPage/track";
 import H1 from "../../components/Texts/H1";
-import H2 from "../../components/Texts/H2";
 import H3 from "../../components/Texts/H3";
-import H4 from "../../components/Texts/H4";
 import H5 from "../../components/Texts/H5";
 
 import FlexInCloud from './../../img/atendimento/flexibilidade-em-nuvem.jpg'
 import Data from './../../img/atendimento/rum02.jpg'
 import Center from './../../img/atendimento/rum03.jpg'
 
-import CamPoly from './../../img/comunicacao/camera-poly-sim-company.jpg'
 import dashboard from './../../img/atendimento/dashboard.jpg'
 import CalPlay from './../../img/comunicacao/chamada-de-video-online.png'
-import ConenctMultPlataform from './../../img/comunicacao/conectividade-em-multiplas-plataformas.jpg'
 import KitGoToRom from './../../img/comunicacao/kit-goto-room-sim-company.png'
-import Logitech from './../../img/comunicacao/logitech-sim-company-venda.jpg'
-import PasswordSystem from './../../img/comunicacao/sistema-de-senha.png'
-import Meeting from './../../img/comunicacao/meeting.svg'
 
 
 

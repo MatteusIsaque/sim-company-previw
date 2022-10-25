@@ -7,9 +7,9 @@ import Slide from "../components/slide/Slide";
 import H3 from "../components/Texts/H3";
 import H5 from "../components/Texts/H5";
 
-import mg1 from './../img/home/mg1.png'
-import mg2 from './../img/home/mg2.png'
-import rodape from './../img/home/sim-company-rodape.png'
+import mg1 from './../img/index/mg1.png'
+import mg2 from './../img/index/mg2.png'
+import rodape from './../img/index/sim-company-rodape.png'
 
 
 

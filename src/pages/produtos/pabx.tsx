@@ -1,25 +1,19 @@
-import { Box, Flex, Grid, GridItem, Highlight, Text } from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Text } from "@chakra-ui/react";
 import Head from "next/head";
-import Image from "next/image";
 import ButtonChakra from "../../components/Button/Button";
 import Topics from "../../components/Information/Topics";
 import DoubleGrid from "../../components/ProdutosPage/DoubleGrid";
 import PresentationProduction from "../../components/ProdutosPage/PresentationProduction";
 import Track from "../../components/ProdutosPage/track";
 import H1 from "../../components/Texts/H1";
-import H2 from "../../components/Texts/H2";
 import H3 from "../../components/Texts/H3";
-import H4 from "../../components/Texts/H4";
-import H5 from "../../components/Texts/H5";
 
 
-import Call from './../../img/pabx/call.jpg'
 import Can from './../../img/pabx/camera.jpg'
 import BranchCall from './../../img/pabx/chamadas.jpg'
 import Group04 from './../../img/pabx/grup04.jpg'
 import Group05 from './../../img/pabx/grup05.jpg'
 import Group06 from './../../img/pabx/grup06.jpg'
-import PabX from './../../img/pabx/pabx.jpg'
 import Dashboard from './../../img/pabx/painel.jpg'
 
 
