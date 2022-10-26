@@ -26,7 +26,7 @@ export default function Slide() {
   return (
     <Carousel infinite responsive={responsive}>
 
-      <Box position='relative' bgImage={{ base: 'https://i.imgur.com/Qums2CL.jpg', md: 'https://i.imgur.com/Qums2CL.jpg' }} bgPosition='center' bgSize='cover'>
+      <Box position='relative' bgImage={{ base: 'https://i.imgur.com/Qums2CL.jpg', md: 'https://i.imgur.com/dtGbCTa.jpg' }} bgPosition='center' bgSize='cover'>
         {/* <Box position='absolute' w='100%'>
           <Image src={ isLargerThan1200 ? CopaCompany : CopaCompanyMobile } layout='responsive' />
         </Box> */}
