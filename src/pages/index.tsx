@@ -31,7 +31,7 @@ export default function Index() {
         mb={{ md: '0px', lg: '-25vw' }}
         py={{ base: '50px', xl: '0px' }}
       >
-        <Box alignSelf={{ base: 'center', lg: 'start' }} mt={{ md: '0px', lg: '8vw' }}>
+        <Box alignSelf={{ base: 'center', lg: 'start' }}  mt={{ md: '0px', lg: '8vw' }}>
           <H3>
             Suporte para comunicações
           </H3>
@@ -84,9 +84,10 @@ export default function Index() {
 
       <Grid
         px={{ base: '5%', xl: '10%' }}
-        py={{ base: '50px' }}
-        gridTemplateColumns={{ base: '1fr', md: '1fr 1fr' }}
-        gridColumnGap={{ base: '0px', sm: '5%' }}
+        py={{ base: '50px', md: '100px' }}
+        gridTemplateColumns={{ base: '1fr', md: '40% 1fr' }}
+        gridColumnGap={{ base: '0px', sm: '10%' }}
+
       >
         <GridItem>
           <Image src={mg2} />
@@ -136,7 +137,7 @@ export default function Index() {
             Implantação de Sistemas Operacionais, Storage, Backup, Banco de Dados e muito mais.</Text>
         </Box>
         <Box
-          h={{ base: '494px', xl: '550px', '2xl': '600px' }}
+          h={{ base: '494px', xl: '550px', '2xl': '780px' }}
           w='100%'
           mt={{ base: '-100px', xl: '-8vw', '2xl': '-152px' }}>
           <Image src={rodape} />

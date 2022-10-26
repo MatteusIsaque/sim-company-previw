@@ -26,11 +26,11 @@ export default function Slide() {
   return (
     <Carousel infinite responsive={responsive}>
 
-      <Box position='relative' h='90vh' bgImage={{ base: 'https://i.imgur.com/Qums2CL.jpg', md: 'https://i.imgur.com/dtGbCTa.jpg' }} bgPosition='center' bgSize='cover'>
+      <Box position='relative' h={{ base: '60vh', md: '90vh' }} bgImage={{ base: 'https://i.imgur.com/Qums2CL.jpg', md: 'https://i.imgur.com/dtGbCTa.jpg' }} bgPosition='center' bgSize='cover'>
         {/* <Box position='absolute' w='100%'>
           <Image src={ isLargerThan1200 ? CopaCompany : CopaCompanyMobile } layout='responsive' />
         </Box> */}
-        <Box w='100%' display='flex' h='90vh' flexDirection='column' alignItems='start' justifyContent='center' ml='10%'>
+        <Box w='100%' display='flex' h={{ base: '60vh', md: '90vh' }} flexDirection='column' alignItems='start' justifyContent='center' mx={{ base: '10%', md: '10%' }}>
           <Text as='span' fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }} mb={{ base: '0px', lg: '-20px' }} color='white'>Soluções de TI</Text>
           <Text as='h3' fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }} fontWeight='extrabold' color='White' >
             Para sua empresa
@@ -42,11 +42,11 @@ export default function Slide() {
         </Box>
       </Box>
 
-      <Box position='relative' h='90vh' bgImage={{ base: 'https://i.imgur.com/PYHW2NE.jpg', md:'https://i.imgur.com/CV0egNJ.jpg' }}  bgPosition='center' bgSize='cover'>
+      <Box position='relative' h={{ base: '60vh', md: '90vh' }} bgImage={{ base: 'https://i.imgur.com/PYHW2NE.jpg', md: 'https://i.imgur.com/CV0egNJ.jpg' }} bgPosition='center' bgSize='cover'>
         {/* <Box position='absolute' w='100%' h='80vh'>
           <Image src={Capa} height='800px' />
         </Box> */}
-        <Box w='100%' h='90vh' display='flex' flexDirection='column' alignItems='start' justifyContent='center' ml='10%'>
+        <Box w='100%' h={{ base: '60vh', md: '90vh' }} display='flex' flexDirection='column' alignItems='start' justifyContent='center' ml='10%'>
           <Text as='span' fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }} mb={{ base: '0px', lg: '-20px' }} color='white'>Sala de</Text>
           <Text as='h3' fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }} letterSpacing={0} fontWeight='extrabold' color='White' >
             Reunião inteligente

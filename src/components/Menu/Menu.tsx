@@ -54,9 +54,9 @@ export default function Menu() {
           justifyContent='space-between'
           h='60px'
           alignSelf='center'
-          maxW={{ '2xl': '1344px' }}
+          // maxW={{ '2xl': '1344px' }}
           bgColor='white'
-          mx={{ base: '5%', lg: '10%', '2xl': '15%' }}>
+          mx={{ base: '5%', xl: '10%' }}>
           <Logo w='50px' />
 
           {isDrawer && (

@@ -24,8 +24,8 @@ export const theme = extendTheme({
     '2xl': '96em',
   },
   fonts: {
-    heading: 'montserrat',
-    body: 'montserrat'
+    heading: 'montserrat, sans-serif',
+    body: 'montserrat, sans-serif'
   },
   styles: {
     global: {
