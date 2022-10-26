@@ -100,7 +100,7 @@ export default function Menu() {
                     alignItems='center'
                     flexDirection='column'>
                     <Logo
-                      w='120px' />
+                      w='60px' />
                     <Text
                       mt='4'
                       fontSize='12px'

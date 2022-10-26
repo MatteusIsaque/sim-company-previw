@@ -26,7 +26,7 @@ export default function Slide() {
   return (
     <Carousel infinite responsive={responsive}>
 
-      <Box position='relative' bgImage='https://i.imgur.com/dtGbCTa.jpg' bgPosition='center' bgSize='cover'>
+      <Box position='relative' bgImage={{ base: 'https://i.imgur.com/Qums2CL.jpg', md: 'https://i.imgur.com/Qums2CL.jpg' }} bgPosition='center' bgSize='cover'>
         {/* <Box position='absolute' w='100%'>
           <Image src={ isLargerThan1200 ? CopaCompany : CopaCompanyMobile } layout='responsive' />
         </Box> */}
@@ -42,12 +42,12 @@ export default function Slide() {
         </Box>
       </Box>
 
-      <Box position='relative' bgImage='https://i.imgur.com/CV0egNJ.jpg' bgPosition='center' bgSize='cover'>
+      <Box position='relative' bgImage={{ base: 'https://i.imgur.com/PYHW2NE.jpg', md:'https://i.imgur.com/CV0egNJ.jpg' }}  bgPosition='center' bgSize='cover'>
         {/* <Box position='absolute' w='100%' h='80vh'>
           <Image src={Capa} height='800px' />
         </Box> */}
         <Box zIndex={400} w='100%' h='800px' display='flex' flexDirection='column' alignItems='start' justifyContent='center' ml='10%'>
-          <Text as='span' fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }} mb='-20px' color='white'>Sala de</Text>
+          <Text as='span' fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }} mb={{ base: '0px', lg: '-20px' }} color='white'>Sala de</Text>
           <Text as='h3' fontSize={{ base: '2xl', md: '4xl', lg: '5xl' }} letterSpacing={0} fontWeight='extrabold' color='White' >
             Reunião inteligente
           </Text>
@@ -62,6 +62,6 @@ export default function Slide() {
       </Box>
 
 
-    </Carousel>
+    </Carousel >
   )
 }
