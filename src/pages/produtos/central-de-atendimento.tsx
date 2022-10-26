@@ -129,7 +129,7 @@ export default function Comunicação() {
             title="Mantenha uma central
             de atendimento sem
             preocupações"
-            description='onfigure fluxos de chamadas com o editor de planos de discagem de arrastar e soltar, atribua permissões de acesso e faça alterações em um único portal de administração simplificado.'
+            description='Configure fluxos de chamadas com o editor de planos de discagem de arrastar e soltar, atribua permissões de acesso e faça alterações em um único portal de administração simplificado.'
           />
         </DoubleGrid>
 
