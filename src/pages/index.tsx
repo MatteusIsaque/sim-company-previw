@@ -17,7 +17,7 @@ export default function Index() {
 
   return (
     <Box as='main' maxW='1920px' mt='auto'>
-      <Box>
+      <Box mb='0px'>
         <Slide />
       </Box>
       <Track
@@ -25,17 +25,13 @@ export default function Index() {
         description="Pacotes essenciais para a comunicação empresarial com suporte de TI." />
 
       <Grid
-        gridTemplateColumns={{ base: '1fr', sm: '1fr 1fr' }}
-        gridTemplateRows={{ base: '1fr 1fr', sm: '1fr' }}
-        gridColumnGap={{ base: '0px', sm: '5%' }}
         mx={{ base: '5%', xl: '10%' }}
-        mt={{ base: '0px', md: '75px' }}
-        pb={{ base: '60px' }}
-        h={{ base: '900px', sm: '400px' }}
-        position={{ base: 'relative' }}
-        textAlign={{ base: 'center', sm: 'start' }}
+        gridTemplateColumns={{ base: '1fr', sm: '1fr 1fr' }}
+        gridColumnGap={{ base: '0px', sm: '5%' }}
+        mb={{ md: '0px', lg: '-25vw' }}
+        py={{ base: '50px', xl: '0px' }}
       >
-        <GridItem pt='100px'>
+        <Box alignSelf={{ base: 'center', lg: 'start' }} mt={{ md: '0px', lg: '8vw' }}>
           <H3>
             Suporte para comunicações
           </H3>
@@ -48,21 +44,19 @@ export default function Index() {
           <Link href='/produtos/central-de-atendimento'>
             <ButtonChakra mt='4'>Avaliar produtos</ButtonChakra>
           </Link>
-        </GridItem>
-        <GridItem>
-          <Box position={{ base: 'initial', md: 'absolute' }}>
-            <Image src={mg1} />
-          </Box>
-        </GridItem>
+        </Box>
+        <Box zIndex={1}>
+          <Image src={mg1} />
+        </Box>
       </Grid>
 
       <Grid
-        gridTemplateColumns={{ base: '1fr', sm: '1fr 1fr' }}
-        gridTemplateRows={{ base: '1fr 1fr', sm: '1fr' }}
+        gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }}
+        gridTemplateRows={{ base: '1fr', sm: '1fr' }}
         gridColumnGap={{ base: '0px', sm: '5%' }}
-        gridRowGap={{ base: '20px', sm: '0px' }}
-        px={{ base: '2%', sm: '5%', xl: '10%' }}
-        h='400px'
+        px={{ base: '5%', xl: '10%' }}
+        position={{ base: 'relative' }}
+        textAlign={{ base: 'center', lg: 'start' }}
         bgColor='Green.300'
 
       >
@@ -89,26 +83,16 @@ export default function Index() {
       </Grid>
 
       <Grid
-        gridTemplateColumns={{ base: '1fr', sm: '1fr 1fr' }}
-        gridTemplateRows={{ base: '1fr 1fr', sm: '1fr' }}
-        gridColumnGap={{ base: '0px', sm: '5%' }}
-        gridRowGap={{ base: '20px', sm: '0px' }}
         px={{ base: '5%', xl: '10%' }}
-        py={{ base: '50px', sm: '0px' }}
-        // justifyContent='center'
-        alignItems='center'
-        h='1000px'
+        py={{ base: '50px' }}
+        gridTemplateColumns={{ base: '1fr', md: '1fr 1fr' }}
+        gridColumnGap={{ base: '0px', sm: '5%' }}
       >
         <GridItem>
           <Image src={mg2} />
         </GridItem>
         <GridItem
-          h='200px'
-          display='flex'
-          justifyContent='center'
-          alignItems={{ base: 'center', sm: 'start' }}
-          flexDirection='column'
-          textAlign={{ base: 'center', sm: 'start' }}
+          alignSelf='center'
         >
           <H3>
             Acessos

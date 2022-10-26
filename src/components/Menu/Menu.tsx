@@ -88,7 +88,7 @@ export default function Menu() {
                 >
                   <SetMenuItem
                     display='flex'
-                    textAlign='center'
+                    alignItems='start'
                     flexDirection='column'
                     color='white'
                     fontSize='18px'
@@ -198,32 +198,6 @@ export default function Menu() {
                   </MenuItem>
                 </Box>
               </Stack>
-
-              {/* <Fade in={isOpen}>
-        <Flex ml='20%' w='100%' flex='1'>
-          <Box h='60vh' bgColor='Green.500' bgGradient={[
-            'linear(to-b, Green.500, Green.300)',
-          ]} w='2px' borderRadius='10' />
-          <Stack spacing={4} justifyContent='center' flexDirection='column' pl='60px'>
-            <Box>
-              <Text fontSize='2xl'>
-                PABX
-              </Text>
-            </Box>
-            <Box>
-              <Text fontSize='2xl'>
-                Hardware para conferência
-              </Text>
-            </Box>
-            <Box>
-              <Text fontSize='2xl'>
-                Centra de atendimento
-              </Text>
-            </Box>
-          </Stack>
-        </Flex>
-      </Fade> */}
-
             </Flex>
           </DrawerBody>
         </DrawerContent>

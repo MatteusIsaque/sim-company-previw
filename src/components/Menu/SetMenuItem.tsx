@@ -1,4 +1,4 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Fade, Flex, HStack, Icon, Link, Stack, StackProps, VStack } from "@chakra-ui/react";
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Divider, Fade, Flex, HStack, Icon, Link, Stack, StackProps, VStack } from "@chakra-ui/react";
 import MenuItem from "./MenuItem";
 
 import { IoMdArrowDropright } from 'react-icons/io'
@@ -14,7 +14,7 @@ export default function SetMenuItem({ mb, ...rest }: SetMenuItemProps) {
   // }
 
   return (
-    <Stack {...rest}>
+    <Stack w='100%' {...rest}>
       <MenuItem link='/' >
         Inicio
       </MenuItem>
@@ -22,34 +22,37 @@ export default function SetMenuItem({ mb, ...rest }: SetMenuItemProps) {
         Serviços
       </MenuItem>
       <Box position='relative'>
-        <Accordion border='white' allowToggle >
-          <AccordionItem>
-            <AccordionButton>
-              <Box flex='1' mr='2' textAlign='left'>
+        <Accordion allowToggle >
+          <AccordionItem border='none'>
+            <AccordionButton p='0px' _expanded={{
+              bgColor: '#1c2234',
+              p: '2'
+            }}>
+              <Box textAlign='left'>
                 Produtos
               </Box>
               <AccordionIcon />
             </AccordionButton>
-            <AccordionPanel position='absolute' bgColor='whiteAlpha.900' bottom='-117px'>
-              <Stack direction='column' textAlign='center' justifyContent='space-around' h='80px'>
-                <Link href='/produtos/central-de-atendimento'>
+            <AccordionPanel bgColor='#1c2234'>
+              <Stack direction='column' textAlign='start' justifyContent='space-around' h='160px'>
+                <Link fontSize='16px' href='/produtos/central-de-atendimento'>
                   Central de atendimento
                 </Link>
-                <Link href='/produtos/hardware-para-conferencias'>
+                <Link fontSize='16px' href='/produtos/hardware-para-conferencias'>
                   Hardware para conferências
                 </Link>
-                <Link href='/produtos/pabx'>
+                <Link fontSize='16px' href='/produtos/pabx'>
                   PABX
                 </Link>
               </Stack>
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
-      </Box>
+      </Box >
       <MenuItem link='/contato'>
         Contato
       </MenuItem>
 
-    </Stack>
+    </Stack >
   )
 }
