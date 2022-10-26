@@ -28,15 +28,15 @@ export default function Pabx() {
 
       <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
         <Grid
-          height='90vh'
+          height='80vh'
           alignItems='center'
           px='10%'
           w='100%'
-          backgroundImage="url('https://i.imgur.com/L74Q6jP.jpg')"
+          backgroundImage={{ base: 'https://i.imgur.com/ZBBeSDh.jpg', md: 'https://i.imgur.com/L74Q6jP.jpg' }}
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
           backgroundSize="cover"
-          gridTemplateColumns='1fr 1fr'
+          gridTemplateColumns={{base:'1fr', md:'1fr 1fr'}}
           gridTemplateRows='1fr'
           gridColumnGap='10%'>
           <GridItem>

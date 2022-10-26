@@ -178,22 +178,22 @@ export default function Menu() {
                   </MenuItem>
                 </Box>
                 <Box>
+                  <MenuItem link='/produtos/plataforma-para-eventos' fontSize='3xl' onClick={onClose}>
+                    Plataforma para Eventos
+                  </MenuItem>
+                </Box>
+                <Box>
+                  <MenuItem link='/produtos/plataforma-de-videoconferencia' fontSize='3xl' onClick={onClose}>
+                    Plataforma de videoconferência
+                  </MenuItem>
+                </Box>
+                <Box>
                   <MenuItem link='/produtos/pabx' fontSize='3xl' onMouseEnter={HoverPABX} onClick={onClose}>
                     PABX
                   </MenuItem>
                 </Box>
                 <Box>
-                  <MenuItem link='/produtos/plataforma-para-eventos' fontSize='3xl' >
-                    Plataforma para Eventos
-                  </MenuItem>
-                </Box>
-                <Box>
-                  <MenuItem link='/produtos/plataforma-de-videoconferencia' fontSize='3xl' >
-                    Plataforma de videoconferência
-                  </MenuItem>
-                </Box>
-                <Box>
-                  <MenuItem link='/' fontSize='3xl'>
+                  <MenuItem link='/contato' fontSize='3xl' onClick={onClose}>
                     Contato
                   </MenuItem>
                 </Box>
