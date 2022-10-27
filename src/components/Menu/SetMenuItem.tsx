@@ -18,10 +18,22 @@ export default function SetMenuItem({ mb, ...rest }: SetMenuItemProps) {
       <MenuItem link='/' >
         Inicio
       </MenuItem>
-      <MenuItem link='/servicos'>
-        Serviços
+      <MenuItem link='/produtos/central-de-atendimento'>
+        Central de Atendimento
       </MenuItem>
-      <Box position='relative'>
+      <MenuItem link='/produtos/plataforma-para-eventos'>
+        Plataforma para eventos
+      </MenuItem>
+      <MenuItem link='/produtos/hardware-para-conferencias'>
+        Hardware para conferências
+      </MenuItem>
+      <MenuItem link='/produtos/plataforma-de-videoconferencia'>
+        Plataforma de videoconferência
+      </MenuItem>
+      <MenuItem link='/produtos/pabx'>
+        Central de PABX em nuvem
+      </MenuItem>
+      {/* <Box position='relative'>
         <Accordion allowToggle >
           <AccordionItem border='none'>
             <AccordionButton p='0px' _expanded={{
@@ -48,7 +60,7 @@ export default function SetMenuItem({ mb, ...rest }: SetMenuItemProps) {
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
-      </Box >
+      </Box > */}
       <MenuItem link='/contato'>
         Contato
       </MenuItem>

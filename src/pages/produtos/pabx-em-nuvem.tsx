@@ -26,26 +26,6 @@ export default function Home() {
   })
 
 
-  function HoverHome() {
-    const testandoId: any = document.getElementById('teste')
-    testandoId.style.backgroundImage = "url('https://i.imgur.com/qUq4MvM.jpg')"
-  }
-
-  function HoverServices() {
-    const testandoId: any = document.getElementById('teste')
-    testandoId.style.backgroundImage = "url('https://i.imgur.com/C5rYATf.jpg')"
-  }
-  // function HoverHome() {
-  //   const testandoId: any = document.getElementById('teste')
-  //   testandoId.style.backgroundImage = "url('https://i.imgur.com/qUq4MvM.jpg')"
-  // }
-  // function HoverHome() {
-  //   const testandoId: any = document.getElementById('teste')
-  //   testandoId.style.backgroundImage = "url('https://i.imgur.com/qUq4MvM.jpg')"
-  // }
-
-
-
   return (
     <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
 

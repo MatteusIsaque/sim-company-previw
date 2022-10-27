@@ -13,7 +13,7 @@ interface PresentationProductionProps extends GridItemProps {
 export default function PresentationProduction({ urlImage, title, description, ...rest }: PresentationProductionProps) {
 
   return (
-    <GridItem textAlign='center' {...rest}>
+    <GridItem alignContent='center' textAlign='center' {...rest}>
       {
         urlImage && <Box>
           <Image src={urlImage} />
@@ -22,7 +22,7 @@ export default function PresentationProduction({ urlImage, title, description, .
       <H5 pt='4' fontSize='2xl' color='Blue.800'>
         {title}
       </H5>
-      <Text>
+      <Text >
         {description}
       </Text>
     </GridItem>

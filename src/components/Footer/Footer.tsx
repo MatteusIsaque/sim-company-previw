@@ -1,4 +1,5 @@
 import { Box, Divider, Flex, Grid, GridItem, HStack, Icon, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import { RiInstagramLine } from "react-icons/ri";
 import { TiSocialFacebookCircular, TiSocialLinkedinCircular } from "react-icons/ti";
 
@@ -16,8 +17,7 @@ export default function Footer() {
           <Text fontWeight='bold' color='white'>Contato</Text>
           <Stack spacing={1}>
             <Text mt='2' fontWeight='light' color='white'>contato@simcompany.com</Text>
-            <Text fontWeight='light' color='white'>(11) 99999-9999</Text>
-            <Text fontWeight='light' color='white'>(11) 99999-9999</Text>
+            <Text fontWeight='light' color='white'>(11) 5039-9046</Text>
           </Stack>
 
           <HStack mt='8'>
@@ -28,14 +28,23 @@ export default function Footer() {
         </GridItem>
 
         <GridItem mb={{ base: '20px', sm: '0px' }}>
-          <Text fontWeight='bold' color='white'>Comunicação</Text>
-          <Stack spacing={1} color='white'>
-            <Text mt='2'>Ligações</Text>
-            <Text>Central de atendimento</Text>
-            <Text>Videoconferência</Text>
-            <Text>Eventos virtuais</Text>
-            <Text>Hardware para conferência</Text>
-            <Text>Training virtual</Text>
+          <Text fontWeight='bold' color='white' mb='2'>Comunicação</Text>
+          <Stack spacing={2} color='white'>
+            <Link href='/produtos/central-de-atendimento'>
+              <Text cursor='pointer'>Central de atendimento</Text>
+            </Link>
+            <Link href='/produtos/plataforma-de-videoconferencia'>
+              <Text cursor='pointer'>Videoconferência</Text>
+            </Link>
+            <Link href='/produtos/plataforma-para-eventos'>
+              <Text cursor='pointer'>Eventos virtuais</Text>
+            </Link>
+            <Link href='/hardware-para-conferencias'>
+              <Text cursor='pointer'>Hardware para conferência</Text>
+            </Link>
+            <Link href='/produtos/pabx-em-nuvem'>
+              <Text cursor='pointer'>PABX em nuvem</Text>
+            </Link>
           </Stack>
         </GridItem>
 
@@ -55,7 +64,7 @@ export default function Footer() {
 
       <Divider mt='-19px' orientation='horizontal' />
 
-      <Flex color='white' fontSize='12px' mx={{sm:'5%'}} textAlign='center' p='1px' flexDirection='column'>
+      <Flex color='white' fontSize='12px' mx={{ sm: '5%' }} textAlign='center' p='1px' flexDirection='column'>
         <Text>Desenvolvido por Isaques Estúdios | Todos os Direitos Reservados a Sim Company®</Text>
         <Text>Política de Privacidade e Termos de uso</Text>
         <Text>Tecnologia Utilizada: NextJs</Text>

@@ -36,17 +36,17 @@ export default function Pabx() {
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
           backgroundSize="cover"
-          gridTemplateColumns={{base:'1fr', md:'1fr 1fr'}}
+          gridTemplateColumns={{ base: '1fr', md: '1fr 1fr' }}
           gridTemplateRows='1fr'
           gridColumnGap='10%'>
           <GridItem>
-            <H1 lineHeight='40px' mb='20px' fontSize='4xl' color='White' fontWeight='extrabold' >
+            <H1 lineHeight='40px' mb='20px' fontSize={{ base: '3xl', xl: '4xl' }} color='White' fontWeight='extrabold' >
               Plataforma de webinar<br />
               livre de complicações
             </H1>
             <Text color='white'>Organize treinamentos e eventos híbridos para empresa, de
               demonstrações de produto pré-gravadas a conferências de vários dias</Text>
-            <ButtonChakra mt='6' px='10' py='8'>Falar com departamento</ButtonChakra>
+            <ButtonChakra mt='6' p={{ base: '6', xl: '8' }}>Falar com departamento</ButtonChakra>
           </GridItem>
           <GridItem>
 
@@ -62,7 +62,7 @@ export default function Pabx() {
 
 
 
-        <Grid mt='140px' gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='2.5%' width='75%' mx='12.5%'>
+        <Grid my={{ base: '50px', xl: '85px' }} gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='2.5%' gridRowGap={{ base: '25px' }} width='75%' mx='12.5%'>
           <PresentationProduction
             title="Escala"
             description="Até 3.000 pessoas podem participar no Webcast pelo navegador, sem precisar baixar nada."
@@ -86,12 +86,9 @@ export default function Pabx() {
         <DoubleGrid
           flexDirection={{ base: 'column', lg: 'row-reverse' }}
           urlImage={webinarGraphic}
-          mt={{ base: '20' }}
+          paragraphPosition={{ base: 'center', lg: 'end' }}
         >
           <Topics
-            mb='2'
-            paragraphPosition='end'
-            textAlign='end'
             title="Conjunto de ferramentas"
             description='Dê aos seus participantes o melhor que puder com vídeo e áudio HD de alta qualidade e recursos avançados que adicionam impacto aos seus eventos sem sacrificar a conveniência.
 
@@ -110,10 +107,10 @@ export default function Pabx() {
         <DoubleGrid
           my={{ base: '0px', md: '50px', xl: '0px' }}
           flexDirection={{ base: 'column', lg: 'row' }}
+          paragraphPosition={{ base: 'center', lg: 'start' }}
           urlImage={ModelWebinar}
         >
           <Topics
-            mt='6'
             title='Expresse de maneira criativa'
             description='Com participação ativa na sessão, certificado de conclusão e muito mais, eventos envolventes incentivam a participação e o aprendizado do público enquanto você atrai novos clientes.
 
@@ -132,8 +129,8 @@ export default function Pabx() {
 
         <DoubleGrid
           flexDirection={{ base: 'column', lg: 'row-reverse' }}
+          paragraphPosition={{ base: 'center', lg: 'end' }}
           urlImage={DashboardWebinar}
-          mb={{ base: '20' }}
         >
           <Topics
             mb='2'
@@ -155,7 +152,7 @@ export default function Pabx() {
           />
         </DoubleGrid>
 
-        <Track mt={{ base: '-50px', md: '0px' }}
+        <Track mb='50px'
           title='Organize seus melhores eventos'
         />
       </main>

@@ -14,8 +14,8 @@ import Data from './../../img/atendimento/rum02.jpg'
 import Center from './../../img/atendimento/rum03.jpg'
 
 import dashboard from './../../img/atendimento/dashboard.jpg'
-import CalPlay from './../../img/comunicacao/chamada-de-video-online.png'
-import KitGoToRom from './../../img/comunicacao/kit-goto-room-sim-company.png'
+import CalPlay from './../../img/atendimento/Ti-sem-complicação.jpg'
+import KitGoToRom from './../../img/atendimento/rápida-instalação.jpg'
 
 
 
@@ -29,7 +29,7 @@ export default function Comunicação() {
 
       <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
         <Grid
-          height='99vh'
+          height='80vh'
           alignItems='center'
           px='10%'
           w='100%'
@@ -47,7 +47,7 @@ export default function Comunicação() {
             </H1>
             <Text color='white'>Ofereça melhores experiências ao cliente e aumente a receita com uma
               solução de call center em nuvem para pequenas e médias empresas.</Text>
-            <ButtonChakra mt='6' px='10' py='8'>SOLICITAR DEMONSTRAÇÃO</ButtonChakra>
+            <ButtonChakra mt='6' px='8' py='6'>SOLICITAR DEMONSTRAÇÃO</ButtonChakra>
           </GridItem>
           <GridItem>
 
@@ -61,7 +61,7 @@ export default function Comunicação() {
 
 
 
-        <Grid my='140px' gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='7.5%' width='75%' mx='12.5%'>
+        <Grid my={{ base: '50px', md: '85px' }} gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='7.5%' width='75%' mx='12.5%'>
           <PresentationProduction
             urlImage={FlexInCloud}
             title="Flexibilidade baseada na nuvem"
@@ -81,20 +81,18 @@ export default function Comunicação() {
         </Grid>
 
 
-        <Flex flexDirection='column' alignItems='center' my='80px'>
-          <H3 textAlign={{ base: 'center' }} mb='20px'>Solicite um orçamento com a Sim Company</H3>
-          <ButtonChakra px='60px' py='24px'>Fazer um orçamento</ButtonChakra>
+        <Flex flexDirection='column' alignItems='center'>
+          <H3 textAlign={{ base: 'center' }}>Solicite um orçamento com a Sim Company</H3>
+          <ButtonChakra px='40px' py='18px' mt='2'>Fazer um orçamento</ButtonChakra>
         </Flex>
 
 
         <DoubleGrid
           flexDirection={{ base: 'column', lg: 'row-reverse' }}
           urlImage={dashboard}
+          paragraphPosition={{ base: 'center', md: 'end' }}
         >
           <Topics
-            mb='2'
-            paragraphPosition={{ base: 'center', md: 'end' }}
-            textAlign={{ base: 'center', md: 'end' }}
             title="Melhore a experiência de seus clientes"
             description='Crie o fluxo de trabalho para oferecer experiências de alto nível e obter os resultados que seus clientes merecem. Encaminhe as chamadas dos clientes para os agentes certos e ofereça filas de retorno de chamada. Acelere a discagem ou acione mensagens de voz pré-gravadas. Alterne facilmente entre voz, vídeo, SMS* e bate-papo.'
           />
@@ -102,15 +100,14 @@ export default function Comunicação() {
 
 
         <DoubleGrid
-          my={{ base: '0px', md: '100px', xl: '150px' }}
+          my={{ base: '0px', md: '50px', xl: '85px' }}
           flexDirection={{ base: 'column', lg: 'row' }}
+          paragraphPosition={{ base: 'center', md: 'start' }}
           urlImage={Data}
         >
           <Topics
             mt='6'
             title='Melhore o desempenho com dados sob demanda'
-            paragraphPosition={{ base: 'center', md: 'end' }}
-            textAlign={{ base: 'center', md: 'end' }}
             description='Receba informações sobre a avaliação de seus clientes e use essa métrica para otimizar seus atendimentos. Veja estatísticas e análises de chamadas, como tempos totais de conversa e de espera. Personalize painéis por agente ou equipe. Identifique tendências e padrões de desempenho que podem ser aplicados a melhorias.
             '
           />
@@ -120,7 +117,7 @@ export default function Comunicação() {
         <DoubleGrid
           flexDirection={{ base: 'column', lg: 'row-reverse' }}
           urlImage={Center}
-          mb='100px'
+          mb={{ base: '50px', md: '85px' }}
         >
           <Topics
             mb='2'

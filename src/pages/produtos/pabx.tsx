@@ -27,7 +27,7 @@ export default function Pabx() {
 
       <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
         <Grid
-          height='90vh'
+          height='80vh'
           alignItems='center'
           px='10%'
           w='100%'
@@ -40,9 +40,12 @@ export default function Pabx() {
           gridColumnGap='10%'>
           <GridItem>
             <H1 lineHeight='40px' mb='20px' fontSize='4xl' color='White' fontWeight='extrabold' >
-              Configure em minutos, faça reuniões em segundos
+              A conexão que sua empresa precisa.
             </H1>
-            <Text color='white'>O GoTo Room oferece equipamentos de videoconferência intuitivos e econômicos que ajudam a descomplicar as reuniões.</Text>
+            <Text color='white'>
+              Sistema completo e flexível que atende as suas necessidades diárias,
+              Telefonia em nuvem com sistema integrado de reuniões e mensagens.
+            </Text>
             <ButtonChakra mt='6' px='10' py='8'>SOLICITAR DEMONSTRAÇÃO</ButtonChakra>
           </GridItem>
           <GridItem>
@@ -58,7 +61,7 @@ export default function Pabx() {
 
 
 
-        <Grid mt='140px' gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='5%' width='75%' mx='12.5%'>
+        <Grid my={{ base: '50px', md: '85px' }} gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='5%' width='75%' mx='12.5%'>
           <PresentationProduction
             urlImage={Group04}
             title="Fácil intalação e configuração"
@@ -79,20 +82,19 @@ export default function Pabx() {
 
 
 
-        <Flex flexDirection='column' alignItems='center' my='80px'>
+        <Flex flexDirection='column' alignItems='center'>
           <H3 mb='20px'>Solicite um orçamento com a Sim Company</H3>
           <ButtonChakra px='60px' py='24px'>Fazer um orçamento</ButtonChakra>
         </Flex>
 
 
         <DoubleGrid
+          my={{ base: '50px', md: '85px' }}
           flexDirection={{ base: 'column', lg: 'row-reverse' }}
+          textAlign='end'
           urlImage={BranchCall}
         >
           <Topics
-            mb='2'
-            paragraphPosition='end'
-            textAlign='end'
             title="Desvio de chamadas e planos
             de discagem personalizáveis"
             description='Crie seu próprio encaminhamento de chamadas e conte com PBX completo com editor de plano de discagem de arrastar e soltar. Com nosso sistema de telefonia virtual, é fácil fazer alterações onde quer que você esteja.'
@@ -107,12 +109,11 @@ export default function Pabx() {
 
 
         <DoubleGrid
-          my={{ base: '0px', md: '50px', xl: '0px' }}
+          my={{ base: '50px', md: '85px' }}
           flexDirection={{ base: 'column', lg: 'row' }}
           urlImage={Dashboard}
         >
           <Topics
-            mt='6'
             title='Sistema de telefonia virtual
             que atende às suas
             necessidades'
@@ -122,13 +123,12 @@ export default function Pabx() {
 
 
         <DoubleGrid
+          mb={{ base: '50px', md: '85px' }}
           flexDirection={{ base: 'column', lg: 'row-reverse' }}
           urlImage={Can}
+          textAlign='end'
         >
           <Topics
-            mb='2'
-            paragraphPosition='end'
-            textAlign='end'
             title="Aumentar a satisfação
             dos seus clientes"
             description='Aumente a satisfação dos clientes e ajude a alavancar a produtividade dos representantes otimizando o fluxo de trabalho da central de atendimento com interações mais rápidas e fluidas.'
@@ -136,8 +136,7 @@ export default function Pabx() {
         </DoubleGrid>
 
 
-        <Track mt={{ base: '-50px', md: '0px' }}
-
+        <Track 
           title='Soluções de trabalho flexível compatíveis com
           qualquer aplicativo, em qualquer lugar'
           description="
@@ -146,7 +145,7 @@ export default function Pabx() {
         />
 
 
-        <Grid mx='10%' w='80%' gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='10%'>
+        <Grid my={{ base: '50px', md: '85px' }} mx='10%' w='80%' gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='10%'>
           <GridItem justifyContent={{ base: 'space-around' }} display='flex' flexDirection='column' h='400px' textAlign={{ base: 'center', lg: 'start' }}>
 
             <H3 mt='20px'>Mensal Flexível</H3>

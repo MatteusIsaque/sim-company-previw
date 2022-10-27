@@ -8,7 +8,7 @@ interface TrackProps extends FlexProps {
   description?: string
 }
 
-export default function Track({ title, description, ...rest }: TrackProps) {
+export default function eTrack({ title, description, ...rest }: TrackProps) {
 
   return (
     <Flex {...rest} flexDirection='column' alignItems='center' py='8'>

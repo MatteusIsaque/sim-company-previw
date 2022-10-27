@@ -37,7 +37,22 @@ export default function Menu() {
 
   function HoverHardware() {
     const testandoId: any = document.getElementById('bgHeader')
+    testandoId.style.backgroundImage = "url('https://i.imgur.com/sKkwdfb.jpg')"
+  }
+
+  function HoverEvents() {
+    const testandoId: any = document.getElementById('bgHeader')
+    testandoId.style.backgroundImage = "url('https://i.imgur.com/Bt8VfVh.jpg')"
+  }
+
+  function HoverConferency() {
+    const testandoId: any = document.getElementById('bgHeader')
     testandoId.style.backgroundImage = "url('https://i.imgur.com/ofselle.jpg')"
+  }
+
+  function HoverContact() {
+    const testandoId: any = document.getElementById('bgHeader')
+    testandoId.style.backgroundImage = "url('https://i.imgur.com/S8wHaXl.jpg')"
   }
 
   const router = useRouter()
@@ -125,7 +140,7 @@ export default function Menu() {
       h='60px'
       alignItems='center'
       maxW={{ '2xl': '1344px' }}
-      mx={{ base: '5%', lg: '10%', '2xl': '15%' }}>
+      mx={{ base: '5%', sm: '10%' }}>
       <Flex alignSelf='center'>
         <Logo w='50px' />
       </Flex>
@@ -163,37 +178,37 @@ export default function Menu() {
               position='fixed' top='0' zIndex={100}>
               <Stack spacing={4} justifyContent='center' flexDirection='column'>
                 <Box>
-                  <MenuItem link='/' fontSize='3xl' onMouseEnter={HoverHome}>
+                  <MenuItem link='/' fontSize='26px' onMouseEnter={HoverHome} onClick={onClose}>
                     Inicio
                   </MenuItem>
                 </Box>
                 <Box>
-                  <MenuItem link='/produtos/central-de-atendimento' fontSize='3xl' onMouseEnter={HoverCallCenter} onClick={onClose}>
+                  <MenuItem link='/produtos/central-de-atendimento' fontSize='26px' onMouseEnter={HoverCallCenter} onClick={onClose}>
                     Central de Atendimento
                   </MenuItem>
                 </Box>
                 <Box>
-                  <MenuItem link='/produtos/hardware-para-conferencias' fontSize='3xl' onMouseEnter={HoverHardware} onClick={onClose}>
+                  <MenuItem link='/produtos/hardware-para-conferencias' fontSize='26px' onMouseEnter={HoverHardware} onClick={onClose}>
                     Hardware para Conferências
                   </MenuItem>
                 </Box>
                 <Box>
-                  <MenuItem link='/produtos/plataforma-para-eventos' fontSize='3xl' onClick={onClose}>
+                  <MenuItem link='/produtos/plataforma-para-eventos' fontSize='26px' onMouseEnter={HoverEvents} onClick={onClose}>
                     Plataforma para Eventos
                   </MenuItem>
                 </Box>
                 <Box>
-                  <MenuItem link='/produtos/plataforma-de-videoconferencia' fontSize='3xl' onClick={onClose}>
-                    Plataforma de videoconferência
+                  <MenuItem link='/produtos/plataforma-de-videoconferencia' fontSize='26px' onMouseEnter={HoverConferency} onClick={onClose}>
+                    Plataforma de Videoconferência
                   </MenuItem>
                 </Box>
                 <Box>
-                  <MenuItem link='/produtos/pabx' fontSize='3xl' onMouseEnter={HoverPABX} onClick={onClose}>
-                    PABX
+                  <MenuItem link='/produtos/pabx' fontSize='26px' onMouseEnter={HoverPABX} onClick={onClose}>
+                    Central PABX em Nuvem
                   </MenuItem>
                 </Box>
                 <Box>
-                  <MenuItem link='/contato' fontSize='3xl' onClick={onClose}>
+                  <MenuItem link='/contato' fontSize='26px' onMouseEnter={HoverContact} onClick={onClose}>
                     Contato
                   </MenuItem>
                 </Box>

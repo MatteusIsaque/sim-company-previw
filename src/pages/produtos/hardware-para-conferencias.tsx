@@ -29,7 +29,7 @@ export default function Comunicação() {
       </Head>
 
       <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
-        <Grid           height='90vh'
+        <Grid height='80vh'
           alignItems='center'
           px='10%'
           w='100%'
@@ -60,7 +60,7 @@ export default function Comunicação() {
 
 
 
-        <Grid mt='140px' gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='5%' width='75%' mx='12.5%'>
+        <Grid my={{ base: '50px', md: '85px' }} gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='5%' width='75%' mx='12.5%'>
           <PresentationProduction
             urlImage={PasswordSystem}
             title="Personalize sua configuração"
@@ -81,12 +81,13 @@ export default function Comunicação() {
 
 
 
-        <Track mt='80px'
+        <Track
           title='Escolha seu equipamento de videoconferência'
           description='Conte com a parceria de renomados fornecedores de hardware para promover reuniões excepcionais.'
         />
 
         <DoubleGrid
+          my={{ base: '50px', md: '85px' }}
           flexDirection={{ base: 'column', lg: 'row' }}
           urlImage={Logitech}
         >
@@ -95,7 +96,7 @@ export default function Comunicação() {
 
 
 
-        <Track mt='80px'
+        <Track
           title='Sua soluções all-in-one para salas de reunião'
           description='Conte com a parceria de renomados fornecedores de hardware para promover reuniões excepcionais.'
         />
@@ -103,6 +104,7 @@ export default function Comunicação() {
 
 
         <DoubleGrid
+          my={{ base: '50px', md: '85px' }}
           flexDirection={{ base: 'column', lg: 'row' }}
           urlImage={Meeting}
         >
@@ -125,7 +127,7 @@ export default function Comunicação() {
 
         <DoubleGrid
           flexDirection={{ base: 'column', lg: 'row-reverse' }}
-          my={{ base: '0px', md: '100px', xl: '150px' }}
+          my={{ base: '50px', md: '85px' }}
           urlImage={ConenctMultPlataform}
         >
           <H2 color='Blue.800' mb='4'>Aumente a produtividade com recursos práticos</H2>
@@ -152,14 +154,13 @@ export default function Comunicação() {
 
 
 
-        <Track mt={{ base: '-50px', md: '0px' }}
-
+        <Track
           title='Aumente a produtividade com recursos práticos'
           description="Com duas formas de compras exclusivas, sua organização tem a flexibilidade necessária."
         />
 
 
-        <Grid mx='10%' w='80%' gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='10%'>
+        <Grid my={{ base: '50px', md: '85px' }} mx='10%' w='80%' gridTemplateColumns={{ base: '1fr', lg: '1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='10%'>
           <GridItem mb={{ base: '20' }} justifyContent={{ base: 'center', lg: 'flex-start' }} display='flex' flexDirection='column' textAlign='center'>
 
             <H3 mt='35'>Mensal Flexível</H3>

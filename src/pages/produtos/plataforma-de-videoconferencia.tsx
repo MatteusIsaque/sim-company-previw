@@ -14,7 +14,7 @@ import { MdCheckCircle } from 'react-icons/md'
 
 import SpeedAndSecurity from './../../img/plataforma-de-videoconferência/rapidez-e-segurança-sim-company.jpg'
 import Admin from './../../img/plataforma-de-videoconferência/administração-sim-company.jpg'
-import AudioQuality from './../../img/comunicacao/conectividade-em-multiplas-plataformas.jpg'
+import AudioQuality from './../../img/plataforma-de-videoconferência/qualidade-de-audio-sim-company.jpg'
 import Call from './../../img/plataforma-de-videoconferência/conferencia-online.jpg'
 import Conect from './../../img/plataforma-de-videoconferência/conexão-mundial.jpg'
 import H5 from "../../components/Texts/H5";
@@ -30,11 +30,11 @@ export default function PlataformaVideoconferencia() {
       </Head>
 
       <main style={{ maxWidth: '1920px', margin: '0 auto' }}>
-        <Grid height='90vh'
+        <Grid height='80vh'
           alignItems='center'
           px='10%'
           w='100%'
-          backgroundImage="url('https://i.imgur.com/F0X4at7.jpg')"
+          backgroundImage="url('https://i.imgur.com/TIq0gQZ.jpg')"
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
           backgroundSize="cover"
@@ -64,7 +64,7 @@ export default function PlataformaVideoconferencia() {
 
 
 
-        <Grid mt='140px' gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='5%' width='75%' mx='12.5%'>
+        <Grid my={{ base: '50px', md: '85px' }} gridTemplateColumns={{ base: '1fr', md: '1fr 1fr 1fr' }} gridTemplateRows='1fr' gridColumnGap='5%' width='75%' mx='12.5%'>
           <PresentationProduction
             urlImage={SpeedAndSecurity}
             title="Rapidez e Segurança"
@@ -85,19 +85,19 @@ export default function PlataformaVideoconferencia() {
         </Grid>
 
 
-        <Flex flexDirection='column' alignItems='center' my='80px'>
+        <Flex flexDirection='column' alignItems='center'>
           <H3 textAlign={{ base: 'center' }} mb='20px'>Solicite um orçamento com a Sim Company</H3>
           <ButtonChakra px='60px' py='24px'>Fazer um orçamento</ButtonChakra>
         </Flex>
 
 
         <DoubleGrid
+          my={{ base: '50px', md: '85px' }}
           flexDirection={{ base: 'column', lg: 'row-reverse' }}
           urlImage={Conect}
+          textAlign={{ base: 'center', lg: "end" }}
         >
           <Topics
-            textAlign={{ base: 'center', lg: "end" }}
-            paragraphPosition={{ base: 'center', lg: "end" }}
             mt='6'
             title='Priorizando a segurança dos usúarios'
             description='Mais de 80 milhões de reuniões online por ano: todas contando com a mesma segurança de nível empresarial.'
@@ -106,6 +106,7 @@ export default function PlataformaVideoconferencia() {
 
 
         <DoubleGrid
+          my={{ base: '50px', md: '85px' }}
           flexDirection={{ base: 'column', lg: 'row' }}
           urlImage={Call}
         >
@@ -117,7 +118,7 @@ export default function PlataformaVideoconferencia() {
 
 
 
-        <Track mt={{ base: '25px', md: '100px' }}
+        <Track my={{ base: '50px', md: '85px' }}
           title='Confira os benefícios que acompanham nossos planos'
           description="Repleto de recursos projetados para você ter a melhor experiência de conferência na web"
         />
@@ -127,8 +128,7 @@ export default function PlataformaVideoconferencia() {
           gridColumnGap={{ sm: '5%' }}
           mx={{ base: '10%' }}
           maxW={{ base: '90%', sm: '80%' }}
-          mt={{ base: '0px', sm: '50px' }}
-
+          my={{ base: '50px', md: '85px' }}
         >
           <GridItem my={{ base: '20px' }}>
             <H5 mb='4'>Videoconferências</H5>
